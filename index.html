@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container_game">
+            <div class="introducts" id="introducts">
+                <div class="introducts_logo">
+                    <img src="logo/logo-01.png" alt="">
+                </div>
+                <div class="introducts_title">
+                    <h1>Hướng dẫn chơi</h1>
+                    <ul class="introducts_title-list">
+                        <li class="introducts_title-item">Di chuyển tàu vũ trụ để tránh thiên thạch và tiêu diệt kể thù</li>
+                        <li class="introducts_title-item">Thu thập nhiên liệu để kéo dài thời gian</li>
+                        <li class="introducts_title-item">Không bắn nhầm tàu thân thiện</li>
+                    </ul>
+                </div>
+                <div class="btn_on_game">
+                    <button class="btn_start" id="start">Start Game</button>
+                </div>
+            </div>
+            <div class="game_frame hidden" id="game_frame">
+                <div class="box_infor">
+                    <p>xăng</p>
+                    <p class="frame_blood"><span id="blood"></span></p>
+                    <p >xăng: <span id="score"></span></p>
+                    <p >time :<span id="time">43</span></p>
+                    <p class="high_core">High Score: <span id="high_core"></span></p>
+                </div>
+                <div class="ship">
+                    <img src="images/spaceship_reference_1.png" alt="">
+                </div>
+            
+
+            <div id="planets">
+                <img src="images/planets/001-global.png"   class="planet big">
+                <img src="images/planets/002-travel.png" class="planet medium">
+                <img src="images/planets/003-science-2.png"class="planet tiny">
+                <img src="images/planets/005-science.png"class="planet small">
+            </div>
+
+            <div class="controls">
+                <div class="control_up"></div>
+                <div class="control_left"></div>
+                <div class="control_right"></div>
+                <div class="control_down"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
