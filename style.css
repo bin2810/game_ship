@@ -72,12 +72,15 @@ body{
 
 
 
-.game_frame{
+#game_frame{
     position: relative;
     height: 90vh;
     border: 5px solid white;
     margin: 0 20px;
     overflow: hidden;
+    background-image: url("images/background-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .box_infor{
@@ -100,7 +103,7 @@ body{
     overflow: hidden;
 }
 #blood{
-    width: 200px;
+    width: 180px;
     height: 20px;
     left: 0;
     position: absolute;
@@ -112,12 +115,12 @@ body{
 
 
 
-.ship{
+#main_ship{
     position: absolute;
-    top: 50%;
+    top: 250px;
     left: 100px;
     width: 100px;
-    z-index: 100;
+    z-index: 500;
 }
 .ship img{
     width: 100px;
@@ -136,7 +139,7 @@ body{
     top: 0;
     animation: moveleft linear infinite;
     opacity: 0.8;
-
+    
 }
 .planet.big{
     width: 400px;
@@ -171,8 +174,39 @@ body{
 @keyframes moveleft {
     0%{
         left: 100%;
+        transform: rotate(360deg);
     }
     100%{
         left: -300px;
+        transform: rotate(0deg);
     }
+}
+
+
+#controls .control{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(248, 81, 81, 0.3);
+    border: 2px dashed var(--white-color);
+    cursor: pointer;
+}
+
+#control_up{
+    left: 50%;
+    top: 60px;
+}
+#control_left{
+    top: 50%;
+    left:60px;
+
+
+}
+#control_right{
+    right: 60px;
+    top: 50%;
+}
+#control_down{
+    bottom: 60px;
+    left: 50%;
 }

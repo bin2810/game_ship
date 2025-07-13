@@ -26,6 +26,7 @@
                 </div>
             </div>
             <div class="game_frame hidden" id="game_frame">
+                <!-- thông tin tàu  -->
                 <div class="box_infor">
                     <p>xăng</p>
                     <p class="frame_blood"><span id="blood"></span></p>
@@ -33,24 +34,26 @@
                     <p >time :<span id="time">43</span></p>
                     <p class="high_core">High Score: <span id="high_core"></span></p>
                 </div>
+
+                <!-- tàu chính  -->
                 <div class="ship">
-                    <img src="images/spaceship_reference_1.png" alt="">
+                    <img id="main_ship" src="images/spaceship_reference_1.png" alt="">
                 </div>
             
-
-            <div id="planets">
-                <img src="images/planets/001-global.png"   class="planet big">
-                <img src="images/planets/002-travel.png" class="planet medium">
-                <img src="images/planets/003-science-2.png"class="planet tiny">
-                <img src="images/planets/005-science.png"class="planet small">
-            </div>
-
-            <div class="controls">
-                <div class="control_up"></div>
-                <div class="control_left"></div>
-                <div class="control_right"></div>
-                <div class="control_down"></div>
-            </div>
+                <!-- hành tinh  -->
+                <div id="planets">
+                    <img src="images/planets/001-global.png"   class="planet big">
+                    <img src="images/planets/002-travel.png" class="planet medium">
+                    <img src="images/planets/003-science-2.png"class="planet tiny">
+                    <img src="images/planets/005-science.png"class="planet small">
+                </div>
+                <!-- nút điều khiển tàu  -->
+                <div id="controls">
+                    <div id="control_up" class="control"></div>
+                    <div id="control_left" class="control"></div>
+                    <div id="control_right" class="control"></div>
+                    <div id="control_down" class="control"></div>
+                </div>
         </div>
         </div>
     </div>
